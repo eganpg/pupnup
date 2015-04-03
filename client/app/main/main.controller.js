@@ -27,7 +27,7 @@ angular.module('pupnupApp')
     $scope.$on('$destroy', function () {
       socket.unsyncUpdates('thing');
     });
-    
+
 
 //Describes the dogs name
 
@@ -57,4 +57,10 @@ angular.module('pupnupApp')
     $scope.$on('$destroy', function () {
       socket.unsyncUpdates('dog');
     });
+
+
+    // Percentage of ownership
+
+
+    
   });
