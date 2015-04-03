@@ -27,4 +27,34 @@ angular.module('pupnupApp')
     $scope.$on('$destroy', function () {
       socket.unsyncUpdates('thing');
     });
+    
+
+//Describes the dogs name
+
+
+    $scope.awesomeDog = [];
+
+    // $http.get('/api/things').success(function(awesomeThings) {
+    //   $scope.awesomeThings = awesomeThings;
+      
+    // });
+    socket.syncUpdates('dog', $scope.awesomeDog);
+
+    $scope.addDog = function() {
+      if($scope.newDog === '') {
+        return;
+      }
+      $scope.awesomeDog.push({ name: $scope.newDog });
+      // $http.post('/api/things', { name: $scope.newThing });
+      $scope.newDog = '';
+    };
+
+    $scope.deleteDog = function(dog) {
+      // $http.delete('/api/things/' + thing._id);
+      $scope.awesomeDog.pop(dog);
+    };
+
+    $scope.$on('$destroy', function () {
+      socket.unsyncUpdates('dog');
+    });
   });
