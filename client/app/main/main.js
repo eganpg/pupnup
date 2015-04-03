@@ -8,4 +8,6 @@ angular.module('pupnupApp')
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       });
-  });
+     });
+
+

@@ -6,6 +6,8 @@
     <p class="lead">Puppy Nup... Don't let fido go to the bounce when your relationship goes sour.</p>
     <img src="assets/images/yeoman.png" alt="I'm Yeoman">
   </div>
+  <!-- Standard button -->
+<button type="button" class="btn btn-default start">Get Started</button>
 </header>
 
 <div class="container">
@@ -28,11 +30,12 @@
       </span>
     </p>
   </form>
+  <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
   </div>
 
   <!-- The Dog Section Begins Here -->
 
-  <div class="row" id="who">
+  <div class="row dog" id="dog">
     <div class="col-lg-12" >
       <h1 class="page-header">Tell me about your precious puppy</h1>
       <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="dog in awesomeDog">
@@ -49,12 +52,13 @@
       </span>
     </p>
   </form>
+  <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
   </div>
   
 
   <!-- The percentage of ownership responsibility -->
 
-  <div class="row" id="who">
+  <div class="row" id="owner">
     <div class="col-lg-12">
       <h1 class="page-header" tooltip="{{dog.info}}">Walk/Feed/Bath Percentages for
       <span ng-repeat="dog in awesomeDog"> 
@@ -68,11 +72,12 @@
       </ul>
       <!-- <h4>Edit your team members</h4> -->
     </div>
+    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
   </div>
 
   <!-- How will you make decisions -->
 
-  <div class="row" id="who">
+  <div class="row" id="how">
     <div class="col-lg-12">
       <h1 class="" tooltip="">How will we make decisions</h1>
       <h4>Majority of family</h4>
@@ -81,17 +86,19 @@
       <h4>Unanimously</h4>
       <h4>Other</h4>
     </div>
+    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
   </div>
 
   <!-- What happens in event of a breakup -->
 
-  <div class="row" id="who">
+  <div class="row" id="breakup">
     <div class="col-lg-12">
       <h1 class="" tooltip="">What happens in the event of a breakup</h1>
       <h4>Enter Name... Gets everything</h4>
       <h4> We will each get the chance to offer to take care of *Enter Name*</h4>
       <h4>We will agree to share *Enter Dog* based on the percentage</h4>
     </div>
+    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
   </div>
 
 
@@ -104,3 +111,41 @@
       <p>PupNup</p>
   </div>
 </footer>
+
+
+<script type="text/javascript">
+  $('.start').click(function(){
+    $('#who').goTo();
+  });
+  $('#who').click(function(){
+    $('#dog').goTo();
+  });
+  $('#dog').click(function(){
+    $('#owner').goTo();
+  });
+  $('#owner').click(function(){
+    $('#how').goTo();
+  });
+  $('#how').click(function(){
+    $('#breakup').goTo();
+  });
+  
+  (function($) {
+      $.fn.goTo = function() {
+          $('html, body').animate({
+              scrollTop: $(this).offset().top + 'px'
+          }, 'slow');
+          return this; // for chaining...
+      }
+  })(jQuery);
+   (function($) {
+      $.fn.goUp = function() {
+          $('html, body').animate({
+              scrollTop: $(this).offset().bottom + 'px'
+          }, 'slow');
+          return this; // for chaining...
+      }
+  })(jQuery);
+
+  
+    </script>
