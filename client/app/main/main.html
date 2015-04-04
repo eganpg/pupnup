@@ -16,29 +16,30 @@
 
   <div class="row" id="who">
     <div class="col-lg-12">
-      <h1 class="page-header">Who is in this stupid relationship?</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
-        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
+      <h1 class="page-header who">Who is in this stupid relationship?</h1>
+      <ul class="col-md-12 col-lg-12 col-sm-12" ng-repeat="thing in awesomeThings">
+        <li><p href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></p></li>
       </ul>
     </div>
   
-  <form class="thing-form">
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a name here" ng-model="newThing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
-      </span>
-    </p>
-  </form>
-  <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+    <form class="thing-form">
+      <p class="input-group">
+        <input type="text" class="form-control" placeholder="Add a name here" ng-model="newThing">
+        <span class="input-group-btn" ng-click="addThing()">
+          <button type="submit" class="btn btn-primary" ng-click="addThing()"></button>
+        </span>
+        <hr>
+      </p>
+    </form>
+    <button type="button" class=" whor btn btn-default btn-lg btn-block">Block level button</button>
   </div>
 
   <!-- The Dog Section Begins Here -->
 
   <div class="row dog" id="dog">
     <div class="col-lg-12" >
-      <h1 class="page-header">Tell me about your precious puppy</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="dog in awesomeDog">
+      <h1 class="page-header dog">Tell me about your precious puppy</h1>
+      <ul class="col-md-12 col-lg-12 col-sm-12" ng-repeat="dog in awesomeDog">
         <li><a href="#" tooltip="{{dog.info}}">{{dog.name}}<button type="button" class="close" ng-click="deleteDog(dog)">&times;</button></a></li>
       </ul>
     </div>
@@ -48,11 +49,12 @@
     <p class="input-group">
       <input type="text" class="form-control" placeholder="Add a name here" ng-model="newDog">
       <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="addDog()">Add New</button>
+        <button type="submit" class="btn btn-primary" ng-click="addDog()"></button>
       </span>
+      <hr>
     </p>
   </form>
-  <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+  <button type="button" class=" dogr btn btn-default btn-lg btn-block">Block level button</button>
   </div>
   
 
@@ -60,43 +62,46 @@
 
   <div class="row" id="owner">
     <div class="col-lg-12">
-      <h1 class="page-header" tooltip="{{dog.info}}">Walk/Feed/Bath Percentages for
+      <h1 class="page-header owner" tooltip="{{dog.info}}">Walk/Feed/Bath Percentages for
       <span ng-repeat="dog in awesomeDog"> 
         <span tooltip="{{dog.info}}">{{dog.name}}</span>
         
       </span>
       </h1>
       <ul class=" col-md-12 col-lg-12 col-sm-6" ng-repeat="thing in awesomeThings">
-        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<input type="text" class="form-control" placeholder="Add percentage here" ng-model="newPercentage">
-      </a>%</li>
+        <li class="percentage"><span href="#" tooltip="{{thing.info}}">{{thing.name}}<input type="text" class="percent form-control" placeholder="%" ng-model="newPercentage">%
+      </span></li>
       </ul>
       <!-- <h4>Edit your team members</h4> -->
     </div>
-    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+    <button type="button" class="ownerr btn btn-default btn-lg btn-block">Block level button</button>
   </div>
 
   <!-- How will you make decisions -->
 
   <div class="row" id="how">
     <div class="col-lg-12">
-      <h1 class="" tooltip="">How will we make decisions</h1>
-      <h4>Majority of family</h4>
-      <h4>Majority of voting percentage</h4>
-      <h4>Enter Name Here... is the boss and will ultimately make the decision</h4>
-      <h4>Unanimously</h4>
-      <h4>Other</h4>
+      <h1 class="how" tooltip="">How will we make decisions?</h1>
+      <hr class="title">
+      <h4 class="majority decision" ng-click="majority()">Majority of family</h4>
+      <h4 class="vote decision" ng-click="vote()">Majority of voting percentage</h4>
+      <h4 class="ultimate decision" ng-click="ultimate()">Enter Name Here... is the boss and will ultimately make the decision</h4>
+      <h4 class="uni decision" ng-click="uni()">Unanimously</h4>
+      <!-- <h4>Other</h4> -->
     </div>
-    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+    <button type="button" class="howr btn btn-default btn-lg btn-block">Block level button</button>
   </div>
 
   <!-- What happens in event of a breakup -->
 
   <div class="row" id="breakup">
     <div class="col-lg-12">
-      <h1 class="" tooltip="">What happens in the event of a breakup</h1>
-      <h4>Enter Name... Gets everything</h4>
-      <h4> We will each get the chance to offer to take care of *Enter Name*</h4>
-      <h4>We will agree to share *Enter Dog* based on the percentage</h4>
+      <h1 class="breakup" tooltip="">We hope this never happens.</h1>
+      <p>(But what happens in the event of a breakup)</p>
+      <hr class="title">
+      <h4 class="one  decision" ng-click="one()">Enter Name... Gets everything</h4>
+      <h4 class="two  decision" ng-click="two()"> We will each get the chance to offer to take care of *Enter Name*</h4>
+      <h4 class="three  decision" ng-click="three()">We will agree to share *Enter Dog* based on the percentage</h4>
     </div>
     <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
   </div>
@@ -114,19 +119,26 @@
 
 
 <script type="text/javascript">
+
+ 
+
   $('.start').click(function(){
     $('#who').goTo();
   });
-  $('#who').click(function(){
+  $('.whor').click(function(){
+    console.log('success');
     $('#dog').goTo();
   });
-  $('#dog').click(function(){
+  $('.dogr').click(function(){
+    console.log('success');
     $('#owner').goTo();
   });
-  $('#owner').click(function(){
+  $('.ownerr').click(function(){
+    console.log('success');
     $('#how').goTo();
   });
-  $('#how').click(function(){
+  $('.howr').click(function(){
+    console.log('success');
     $('#breakup').goTo();
   });
   

@@ -59,8 +59,49 @@ angular.module('pupnupApp')
     });
 
 
-    // Percentage of ownership
+    // How to make decisions
+
+    $scope.majority = function(){
+      $('.majority').css('text-decoration', 'none');
+      $('.vote').css('text-decoration', 'line-through', 'green');
+      $('.ultimate').css('text-decoration', 'line-through');
+      $('.uni').css('text-decoration', 'line-through');
+    }
+    $scope.vote = function(){
+      $('.majority').css('text-decoration', 'line-through');
+      $('.vote').css('text-decoration', 'none');
+      $('.ultimate').css('text-decoration', 'line-through');
+      $('.uni').css('text-decoration', 'line-through');
+    }
+    $scope.ultimate = function(){
+      $('.majority').css('text-decoration', 'line-through');
+      $('.vote').css('text-decoration', 'line-through');
+      $('.ultimate').css('text-decoration', 'none');
+      $('.uni').css('text-decoration', 'line-through');
+    }
+    $scope.uni = function(){
+      $('.majority').css('text-decoration', 'line-through');
+      $('.vote').css('text-decoration', 'line-through');
+      $('.ultimate').css('text-decoration', 'line-through');
+      $('.uni').css('text-decoration', 'none');
+    }
+    $scope.one = function(){
+      $('.one').css('text-decoration', 'none');
+      $('.two').css('text-decoration', 'line-through');
+      $('.three').css('text-decoration', 'line-through');
+    }
+    $scope.two = function(){
+      $('.one').css('text-decoration', 'line-through');
+      $('.two').css('text-decoration', 'none');
+      $('.three').css('text-decoration', 'line-through');
+    }
+    $scope.three = function(){
+      $('.one').css('text-decoration', 'line-through');
+      $('.two').css('text-decoration', 'line-through');
+      $('.three').css('text-decoration', 'none');
+    }
 
 
-    
+
+
   });

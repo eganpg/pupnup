@@ -1,0 +1,127 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'pdfkit' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'pdfkit', null ]
+6 verbose cache add name=undefined spec="pdfkit" args=["pdfkit",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'pdfkit',
+7 verbose parsed url   path: 'pdfkit',
+7 verbose parsed url   href: 'pdfkit' }
+8 silly lockFile a5101582-pdfkit pdfkit
+9 verbose lock pdfkit /Users/peteregan/.npm/a5101582-pdfkit.lock
+10 silly lockFile a5101582-pdfkit pdfkit
+11 silly lockFile a5101582-pdfkit pdfkit
+12 verbose addNamed [ 'pdfkit', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 7b7b74b2-pdfkit pdfkit@
+15 verbose lock pdfkit@ /Users/peteregan/.npm/7b7b74b2-pdfkit.lock
+16 silly addNameRange { name: 'pdfkit', range: '*', hasData: false }
+17 verbose request where is /pdfkit
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 3f13d430f8fdcf1f
+20 verbose url raw /pdfkit
+21 verbose url resolving [ 'https://registry.npmjs.org/', './pdfkit' ]
+22 verbose url resolved https://registry.npmjs.org/pdfkit
+23 verbose request where is https://registry.npmjs.org/pdfkit
+24 info trying registry request attempt 1 at 17:52:49
+25 verbose etag "35B8C3OQHDM4DM9EFJ0ZEQAQT"
+26 http GET https://registry.npmjs.org/pdfkit
+27 http 200 https://registry.npmjs.org/pdfkit
+28 silly registry.get cb [ 200,
+28 silly registry.get   { date: 'Sat, 04 Apr 2015 00:52:49 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     etag: '"4J6U1F6PQ9VI813KJCXLXHPTC"',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     'content-length': '45534',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-lax1424-LAX',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1428108769.543834,VS0,VE226',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly addNameRange number 2 { name: 'pdfkit', range: '*', hasData: true }
+30 silly addNameRange versions [ 'pdfkit',
+30 silly addNameRange   [ '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '0.1.5',
+30 silly addNameRange     '0.1.6',
+30 silly addNameRange     '0.1.7',
+30 silly addNameRange     '0.1.8',
+30 silly addNameRange     '0.1.9',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.2.2',
+30 silly addNameRange     '0.2.3',
+30 silly addNameRange     '0.2.4',
+30 silly addNameRange     '0.2.5',
+30 silly addNameRange     '0.2.6',
+30 silly addNameRange     '0.2.7',
+30 silly addNameRange     '0.2.8',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '0.4.3',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '0.5.2',
+30 silly addNameRange     '0.5.3',
+30 silly addNameRange     '0.6.0',
+30 silly addNameRange     '0.6.1',
+30 silly addNameRange     '0.6.2',
+30 silly addNameRange     '0.6.3',
+30 silly addNameRange     '0.6.4',
+30 silly addNameRange     '0.6.5',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1' ] ]
+31 verbose addNamed [ 'pdfkit', '0.7.1' ]
+32 verbose addNamed [ '0.7.1', '0.7.1' ]
+33 silly lockFile 0ea7cfe8-pdfkit-0-7-1 pdfkit@0.7.1
+34 verbose lock pdfkit@0.7.1 /Users/peteregan/.npm/0ea7cfe8-pdfkit-0-7-1.lock
+35 silly lockFile ba66b53a-pmjs-org-pdfkit-pdfkit-0-7-1-tgz https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz
+36 verbose lock https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz /Users/peteregan/.npm/ba66b53a-pmjs-org-pdfkit-pdfkit-0-7-1-tgz.lock
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz',
+37 verbose addRemoteTarball   '9bd41ddf33e757d51352115b32ae56112869055b' ]
+38 info retry fetch attempt 1 at 17:52:49
+39 verbose fetch to= /var/folders/t7/wg67nsdx2w7_frcbjd25qv740000gn/T/npm-5095-Re4R4Sfw/registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz
+40 http GET https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz
+41 http 200 https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz
+42 silly lockFile ba66b53a-pmjs-org-pdfkit-pdfkit-0-7-1-tgz https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz
+43 silly lockFile ba66b53a-pmjs-org-pdfkit-pdfkit-0-7-1-tgz https://registry.npmjs.org/pdfkit/-/pdfkit-0.7.1.tgz
+44 silly lockFile 0ea7cfe8-pdfkit-0-7-1 pdfkit@0.7.1
+45 silly lockFile 0ea7cfe8-pdfkit-0-7-1 pdfkit@0.7.1
+46 silly lockFile 7b7b74b2-pdfkit pdfkit@
+47 silly lockFile 7b7b74b2-pdfkit pdfkit@
+48 error Error: EACCES, mkdir '/Users/peteregan/.npm/pdfkit/0.7.1'
+48 error  { [Error: EACCES, mkdir '/Users/peteregan/.npm/pdfkit/0.7.1']
+48 error   errno: 3,
+48 error   code: 'EACCES',
+48 error   path: '/Users/peteregan/.npm/pdfkit/0.7.1',
+48 error   parent: 'pupnup' }
+49 error Please try running this command again as root/Administrator.
+50 error System Darwin 14.1.0
+51 error command "node" "/usr/local/bin/npm" "install" "pdfkit"
+52 error cwd /Users/peteregan/Desktop/Coding/pupnup
+53 error node -v v0.10.33
+54 error npm -v 1.4.28
+55 error path /Users/peteregan/.npm/pdfkit/0.7.1
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/Users/peteregan/.npm/pdfkit/0.7.1'
+59 verbose exit [ 3, true ]
