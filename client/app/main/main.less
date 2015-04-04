@@ -1,6 +1,9 @@
 .container{
     text-align: center;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .thing-form {
   margin: 20px 0;
 }
@@ -34,24 +37,41 @@ li {
     background-image: url('http://www.digimadmedia.com/photos/puppy-love.jpg');
     background-size: cover;
 }
+#final {
+    
+    position: relative;
+    
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    
+    background-size: cover;
+    width: 100%
+}
+#who {
+    // background-color: #7C7990;
+}
 
 .footer {
     text-align: center;
     padding: 30px 0;
-    margin-top: 70px;
+
+    
     border-top: 1px solid #E5E5E5;
 }
 
-#who, #dog, #owner, #how, #breakup {
+#who, #dog, #owner, #how, #breakup, #final{
     height: 100vh;
     text-align: center;
-    margin-left: 25%;
-
-    width: 50%;
+    
 }
 
-.who, .dog, .owner, .how, .breakup {
-    margin-top: 35%;
+#final {
+    background-image: url('/assets/images/pug.jpg')
+}
+
+.who, .dog, .owner, .how, .breakup, .final {
+    margin-top: 30%;
 }
 
 
@@ -95,5 +115,23 @@ input {
 }
 .title {
     margin-bottom: 5%;
-    
+
 }
+.whoDrop {
+    display: inline-block;
+}
+
+.adjustBreakUpButton {
+  
+}
+.start, .start:hover, .start:focus {
+    background-color: transparent;
+    color: white;
+}
+.next, .next:hover, .next:focus {
+    background-color: transparent;
+    color: black;
+    border-color: #1F8DD6;
+}
+
+
