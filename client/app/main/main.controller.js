@@ -73,18 +73,18 @@ angular.module('pupnupApp')
     $scope.percent1 = function(){
       console.log($('.percent1').val());
       $scope.percentOne = $('.percent1').val();
-    }
+    };
     $scope.percent2 = function(){
       
       $scope.percentTwo = $('.percent2').val();
-    }
+    };
     $scope.percentCheck = function(){
       var total = parseInt($scope.percentTwo) + parseInt($scope.percentOne);
       console.log(total);
-      if(total != 100) {
+      if(total !== 100) {
         alert('Ownership must equal 100%');
       }
-    }
+    };
 
     $scope.decision = function(){
       var decision = [];  
@@ -92,7 +92,7 @@ angular.module('pupnupApp')
       $('.drop').html(this.thing);
       decision.push(this.thing);
       console.log(decision);
-    }
+    };
 
     $scope.breakup = function(){
       var breakup = [];
@@ -100,7 +100,7 @@ angular.module('pupnupApp')
       $('.adjustBreakUpButton').html(this.thing);
       breakup.push(this.thing);
       console.log(breakup);
-    }
+    };
 
     // How to make decisions
 
@@ -111,7 +111,7 @@ angular.module('pupnupApp')
       $('.vote').css('text-decoration', 'line-through', 'green');
       $('.ultimate').css('text-decoration', 'line-through');
       $('.uni').css('text-decoration', 'line-through');
-    }
+    };
     $scope.vote = function(){
       $scope.decisionChoice = $('.vote').html();
       console.log($scope.decisionChoice);
@@ -119,7 +119,7 @@ angular.module('pupnupApp')
       $('.vote').css('text-decoration', 'none');
       $('.ultimate').css('text-decoration', 'line-through');
       $('.uni').css('text-decoration', 'line-through');
-    }
+    };
     $scope.ultimate = function(){
       $scope.decisionChoice = $('.drop').html();
       console.log($scope.decisionChoice);
@@ -127,33 +127,33 @@ angular.module('pupnupApp')
       $('.vote').css('text-decoration', 'line-through');
       $('.ultimate').css('text-decoration', 'none');
       $('.uni').css('text-decoration', 'line-through');
-    }
+    };
     $scope.uni = function(){
       $scope.decisionChoice = $('.uni').html();
       $('.majority').css('text-decoration', 'line-through');
       $('.vote').css('text-decoration', 'line-through');
       $('.ultimate').css('text-decoration', 'line-through');
       $('.uni').css('text-decoration', 'none');
-    }
+    };
     $scope.one = function(){
       $scope.breakupChoice = $('.adjustBreakUpButton').html() + ' ' + $('.getsEverything').html() ;
       console.log($scope.breakupChoice);
       $('.one').css('text-decoration', 'none');
       $('.two').css('text-decoration', 'line-through');
       $('.three').css('text-decoration', 'line-through');
-    }
+    };
     $scope.two = function(){
       $scope.breakupChoice = $('.two').html();
       $('.one').css('text-decoration', 'line-through');
       $('.two').css('text-decoration', 'none');
       $('.three').css('text-decoration', 'line-through');
-    }
+    };
     $scope.three = function(){
       $scope.breakupChoice = $('.three').html();
       $('.one').css('text-decoration', 'line-through');
       $('.two').css('text-decoration', 'line-through');
       $('.three').css('text-decoration', 'none');
-    }
+    };
 
     $scope.pdf = function(something){
       var partyone = $scope.awesomeThings[0];
@@ -230,7 +230,7 @@ angular.module('pupnupApp')
       
       pdfMake.createPdf(docDefinition).open();
       // pdfMake.createPdf(docDefinition).download();
-    }
+    };
 
 
 
