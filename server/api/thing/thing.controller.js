@@ -58,7 +58,7 @@ doc.end();
 
 doc.pipe(res)
 stream.on('finish', function() {
-  window.open(stream.toBlobURL('application/pdf'));
+  
 });
 
 
