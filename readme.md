@@ -22,7 +22,7 @@ Where any Team Member has brought its own pre-existing intellectual property to 
 4.1
 4.2
 4.3 4.4
-No infringing or unauthorised changes: Each Family Member must make sure that any intellectual property that they bring to the Project is owned by them or a related party that they own and control.
+No infringing or unauthorised changes: Each Family Member must make sure that any  property that they purchase is owned by them or a related party that they own and control.
 No assignment: No Team Member is allowed to transfer their interest in the Project to someone else unless we all agree.
 Governing law: This Agreement is governed by New Zealand law. Counterparts: This Agreement may be signed in counterparts.
 SIGNED by ) Peter )

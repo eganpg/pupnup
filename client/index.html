@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="/">
     <title></title>
-    <meta name="description" content="">
+    <meta name="description" content="Owning a pet is one of the most exciting parts of a relationship. Answer these 5 questions so you can focus on loving those little puppy dog eyes.">
+    <meta name="image" content="http://www.digimadmedia.com/photos/puppy-love.jpg">
+    <meta name="title" content="PuppyNup">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
@@ -23,6 +25,14 @@
     <!-- endbuild -->
   </head>
   <body ng-app="pupnupApp">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->

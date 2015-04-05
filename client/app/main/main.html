@@ -31,7 +31,7 @@
         </p>
         <p>(Please press 'enter' after typing each name)</p>
       </form>
-      <button type="button" class=" whor btn btn-default btn-lg next ">Next</button>
+      <button type="button"  ng-click="addThing()" class=" whor btn btn-default btn-lg next ">Next</button>
     </div>
   </div>
 
@@ -57,7 +57,7 @@
         </p>
         <p>(Please press 'enter' after typing each name)</p>
       </form>
-      <button type="button" class=" dogr btn btn-default btn-lg next ">Next</button>
+      <button type="button" ng-click="addDog()" class=" dogr btn btn-default btn-lg next ">Next</button>
     </div>
   </div>
   
@@ -140,6 +140,10 @@
       <h1 class="final" tooltip="">That was easy, click below to view your customized PupNup</h1>
       
       <p>(Although Pup Nup is 100% free. We ask you to share!)</p>
+      <div class="row">
+      <div class="col-md-2 col-md-offset-4 fb-share-button" data-href="http://www.puppynup.com" data-layout="button_count"></div>
+      <a href="https://twitter.com/share" class="col-md-3 twitter-share-button" data-url="http://www.puppynup.com" data-via="PGEgan" data-hashtags="puppynuppuppy">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br><br>
       
     
     <button type="button" ng-click="pdf()" class="btn btn-default btn-lg start">Get Your Pup Nup</button>
@@ -162,17 +166,14 @@
   $('.start').click(function(){
     $('#who').goTo();
   });
-  $('.whor').click(function(){
-    console.log('success');
-    $('#dog').goTo();
-  });
+  
   $('.dogr').click(function(){
     console.log('success');
-    $('#owner').goTo();
+    
   });
   $('.ownerr').click(function(){
     console.log('success');
-    $('#how').goTo();
+    
   });
   $('.howr').click(function(){
     console.log('success');

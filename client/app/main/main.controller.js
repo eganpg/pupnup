@@ -4,7 +4,7 @@
 angular.module('pupnupApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
     $scope.awesomeThings = [];
-
+    $('.twoPeople').hide();
 
     // $http.get('/api/things').success(function(awesomeThings) {
     //   $scope.awesomeThings = awesomeThings;
@@ -17,13 +17,11 @@ angular.module('pupnupApp')
         return;
       }
       $scope.awesomeThings.push($scope.newThing );
-      if($scope.awesomeThings.length > 2){
-        $scope.awesomeThings = [];
-        $('.twoPeople').show();
+      if($scope.awesomeThings.length === 2){
+        console.log('success');
+        $('#dog').goTo();
       }
-      else{
-        $('.twoPeople').hide();
-      }
+      
       // $http.post('/api/things', { name: $scope.newThing });
       $scope.newThing = '';
     };
@@ -56,8 +54,8 @@ angular.module('pupnupApp')
       $scope.awesomeDog.push($scope.newDog );
       // $http.post('/api/things', { name: $scope.newThing });
       $scope.newDog = '';
-      if($scope.awesomeDog.length > 1){
-        $scope.awesomeDog = [];
+      if($scope.awesomeDog.length === 1){
+        $('#owner').goTo();
       }
     };
 
@@ -75,7 +73,6 @@ angular.module('pupnupApp')
       $scope.percentOne = $('.percent1').val();
     };
     $scope.percent2 = function(){
-      
       $scope.percentTwo = $('.percent2').val();
     };
     $scope.percentCheck = function(){
@@ -83,6 +80,9 @@ angular.module('pupnupApp')
       console.log(total);
       if(total !== 100) {
         alert('Ownership must equal 100%');
+      }
+      else{
+        $('#how').goTo();
       }
     };
 
